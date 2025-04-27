@@ -1,60 +1,92 @@
-body{
+/* archivo CSS (styles.css) */
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
-    background-color: black;
-    color: white;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
 }
-h1 {
-    /* Centrado */
-    font-size: 100px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.header {
     text-align: center;
-    
-    /* Efecto de parpadeo */
-    animation: parpadeo 1.5s infinite;
-  }
-  
-  @keyframes parpadeo {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-
-h4 {
-  /* Centrado */
-  font-size: 20px;
-  position: absolute;
-  top: 95%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  
-  /* Efecto de parpadeo */
-  animation: canvas 1.5s infinite;
+    margin-bottom: 40px;
 }
 
-@keyframes canvas {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-    color: tomato;
-  }
-  100% {
-    opacity: 1;
-
-  }  
+h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
 }
 
+h2 {
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.text-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.text-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.image-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text-section2 {
+    flex: 1;
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+    margin-left: 50%;
+    margin-right: 10%;
+
+}
+
+.text-section2 h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.text-section2 ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+.image-section2 {
+    flex: 2;
+    padding: 20px;
+}
+
+.image-section2 img {
+    height: 120%;
+    left: 10%;
+    top: 92%;
+    position: absolute;
+}
